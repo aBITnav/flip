@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLIP</title>
+</head>
+<body bgcolor="#12a">
+	<div id="card">
+		<div id="front">This is front of the card</div>
+		<div id="back"> THiS IS BACK OF THE CARDDD</div>
+	</div>
+
+<style type="text/css">
+
+	#card{
+		padding:10px;
+		margin: 30px;
+		text-align: center;
+		width: 200px;
+		height: 300px;
+		background:#fa0;
+		border-radius: 20px;
+		perspective: 700;
+		box-shadow: 15px 15px #117;
+		
+	}
+	#front{
+		backface-visibility: hidden;
+	}
+	#back{
+		backface-visibility: hidden;
+		transform: rotateY(180deg);
+	}
+	#card:hover{
+		transform-style: preserve-3d;
+		transform: rotatey(180deg);
+		transition: 1.3s ease;
+
+		
+
+	}
+</style>
+</body>
+</html>
